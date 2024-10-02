@@ -39,8 +39,25 @@ shell is the place where all your application is running
 - Look for email forwarding with the domain name ???
 - updating and restarting the server.
 	-	apt is the package manager for ubuntu and linux distribution.
-	- shutdown now -r : shutdown the server and restart the server
+	- shutdown now -r : shutdown the server and restart the server.
+	- root : is the highest permission level on the operating system. Allows unstricted access to the OS.
+	- sudo: super user do. default is never as root.
+	- adduser <name> : to add a new user to server.
+	- usermod -aG sudo <name> : modify the user i.e. add the user to the sudo Group.
+	- su <name> :  to change to user.
+	- sudo vi /etc/ssh/sshd_config: change the root permission of your server. etc can only be access with sudo.
+	- sudo service ssh restart: restart the ssh process.
+	- to switch to root : sudo -i
 
+## Webservers : Nginx (https://www.f5.com/go/product/welcome-to-nginx) and Apache(https://httpd.apache.org/)
+
+- Nginx is written in C and really fast, Faster than node.
+- Reverse proxy : When a request comes to your server we need web servers to handle that requests, to route that reqiest.
+- Nginx : can route to 
+	- application
+	- database
+	- another server
+- Checkout nginx config : /etc/nginx/sites-available/default
 
 slide link : `https://static.frontendmasters.com/assets/courses/2023-04-18-fullstack-v3/fullstack-v3-slides.pdf`
 
