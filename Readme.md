@@ -33,5 +33,14 @@ shell is the place where all your application is running
 - CLOUD COMPUTING : 
 	- virtualization : dividing the servers resources into virtual computers.
 
+
+## Domain
+
+- Look for email forwarding with the domain name ???
+- updating and restarting the server.
+	-	apt is the package manager for ubuntu and linux distribution.
+	- shutdown now -r : shutdown the server and restart the server
+
+
 slide link : `https://static.frontendmasters.com/assets/courses/2023-04-18-fullstack-v3/fullstack-v3-slides.pdf`
 
