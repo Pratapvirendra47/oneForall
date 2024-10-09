@@ -57,7 +57,7 @@ shell is the place where all your application is running
 	- application
 	- database
 	- another server
-- Checkout nginx config : /etc/nginx/sites-available/default
+- Checkout nginx config : /etc/nginx/sites-available/default 
 
 slide link : `https://static.frontendmasters.com/assets/courses/2023-04-18-fullstack-v3/fullstack-v3-slides.pdf`
 
