@@ -1,4 +1,8 @@
 # Fullstack demo repo
+
+
+## BE architecture course slides : https://alt-f4-llc.github.io/fem-bsda-presentation/slides.html
+
 ### Modern Computing
 
  - UI -> Server -> Database
