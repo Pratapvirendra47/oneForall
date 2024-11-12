@@ -38,6 +38,25 @@ shell is the place where all your application is running
 	- virtualization : dividing the servers resources into virtual computers.
 
 
+## Operating Systems
+
+User -> Shell -> Kernel (talks to the hardware) -> hardware
+
+## Security and Hashing
+
+- Passoword cheat sheet : https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html
+- Hashing algorithms are one-way while encryption algorithms are two-way
+- MD5 : Password + MD5 is a hash of different numbers
+	- `openssl md5 foo`
+	- md5 is very easily breakable
+	- md5 hash is about 33 characters
+- SHA1 hash is 44 character
+	- `openssl sha1 foo`
+- SHA256 is 65 characters
+	- `openssl sha256 foo`
+- We need SALT
+	- we take any random number add it the password and we sha or sha256 to get a salted hash
+
 ## Domain
 
 - Look for email forwarding with the domain name ???
