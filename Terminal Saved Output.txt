@@ -1,0 +1,148 @@
+viren@ubuntu-s-1vcpu-1gb-blr1-01:/var/www/html$ cd ..
+viren@ubuntu-s-1vcpu-1gb-blr1-01:/var/www$ pwd
+/var/www
+viren@ubuntu-s-1vcpu-1gb-blr1-01:/var/www$ sudo chown -R $USER:$USER /var/www
+viren@ubuntu-s-1vcpu-1gb-blr1-01:/var/www$ mkdir /var/www/app
+viren@ubuntu-s-1vcpu-1gb-blr1-01:/var/www$ cd app/
+viren@ubuntu-s-1vcpu-1gb-blr1-01:/var/www/app$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+Initialized empty Git repository in /var/www/app/.git/
+viren@ubuntu-s-1vcpu-1gb-blr1-01:/var/www/app$ touch app.js
+viren@ubuntu-s-1vcpu-1gb-blr1-01:/var/www/app$ npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (app) fsfe
+version: (1.0.0) 
+description: 
+entry point: (app.js) 
+test command: 
+git repository: 
+keywords: 
+author: 
+license: (ISC) 
+About to write to /var/www/app/package.json:
+
+{
+  "name": "fsfe",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
+
+
+Is this OK? (yes) 
+
+npm notice
+npm notice New minor version of npm available! 10.8.2 -> 10.9.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v10.9.0
+npm notice To update run: npm install -g npm@10.9.0
+npm notice
+viren@ubuntu-s-1vcpu-1gb-blr1-01:/var/www/app$ ls
+app.js  package.json
+viren@ubuntu-s-1vcpu-1gb-blr1-01:/var/www/app$ vi app.js 
+viren@ubuntu-s-1vcpu-1gb-blr1-01:/var/www/app$ sudo vi /etc/n
+nanorc               needrestart/         netconfig            netplan/             network/             networkd-dispatcher/ networks             newt/                nftables.conf        nginx/               nsswitch.conf
+viren@ubuntu-s-1vcpu-1gb-blr1-01:/var/www/app$ sudo vi /etc/n
+nanorc               needrestart/         netconfig            netplan/             network/             networkd-dispatcher/ networks             newt/                nftables.conf        nginx/               nsswitch.conf
+viren@ubuntu-s-1vcpu-1gb-blr1-01:/var/www/app$ sudo vi /etc/nginx/sites-enabled/fsfe
+
+
+
+
+
+server {
+        listen 80 default_server;
+        listen [::]:80 default_server; 
+           
+        root /var/www/html;
+        index index.html;
+
+        server_name vinstack.lol;
+
+        location / {
+                proxy_pass http://127.0.0.1:3000;
+        }
+}
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+~                                                                                                                                                                                                                                                    
+-- INSERT --                                                                                                                                                                                                                       11,36-50      All
