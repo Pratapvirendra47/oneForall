@@ -133,7 +133,43 @@ User -> Shell -> Kernel (talks to the hardware) -> hardware
 - pm2 start app.js --watch : to start the server
 ## setting up auto restart
 	- pm2 save: will save our current process list
-	- pm2 startup
+	- pm2 startup : copy the command and paste
+
+## verify github  `ssh -Tv git@github.com`
+
+
+## Security
+
+- To check auth log : sudo cat /var/log/auth.log
+- Ports : Communication endpoints that maps to the specific process or network service.
+- well known port : less /etc/services
+- ports allows us to have multiple services on one ip addresses.
+- ports are opening to your computer. nmap <ip address of your server>
+- Extra service information : nmap -sV <ip address of your server>
+
+# Firewall
+
+- A network security device that monitors incoming and outgoing network traffic and decides whether to allow or block request based on defined set of rules.
+- ufw : uncomplicated firewall
+- ufw allow ssh
+- ufw deny :  deny will tell you the error
+- ufw reject : reject will silently reject not telling u the error. system will never respond to the error. like in cases DDOS attacks
+- `sudo ufw status` : check firewall status
+- `sudo ufw allow ssh` : to allow ssh request
+- `sudo ufw allow http` : to allow http request
+- `sudo ufw enable` : to enable firewall
+- `sudo ufw status` : to see the status of the firewall ports
+
+
+# Permissions
+
+- owner-group-everyoneelse
+- read-write-execute : rwx
+- read : 4 (Octal value ) base 8
+- write : 2 
+- execute : 1
+- rwx : 7
+- chmod cheat sheet : https://quickref.me/chmod
 
 slide link : `https://static.frontendmasters.com/assets/courses/2023-04-18-fullstack-v3/fullstack-v3-slides.pdf`
 
