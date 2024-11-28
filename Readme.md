@@ -171,5 +171,67 @@ User -> Shell -> Kernel (talks to the hardware) -> hardware
 - rwx : 7
 - chmod cheat sheet : https://quickref.me/chmod
 
+# unattended upgrades :
+
+- sudo apt install unattended-upgrades : install unattended upgrades.
+- sudo dpkg-reconfigure --priority=low unattended-upgrades : enable upgrades
+
+# CI/CD
+
+- Continous integration : code changes are validated and merged back to the main branch as often as possible.
+- Continous delivery : change are automatically built and ready for production.
+- Continous deployment: Builds are automatically deployed in prod environment.
+- link : `https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment`
+- cron : executes the command on schedule.
+<img src="./cron.png">
+`https://crontab.guru/`
+- * * * * * sh /var/www/app/github.sh 2>&1 | logger -t github.sh : crontab -e script.
+
+- sudo cat /var/log/syslog : to access your system logs (whatever is going on with your system)
+- sudo tail -f /var/log/syslog : to follow your system logs 
+
+
+## Logging
+
+/var/log
+syslog : system logs
+auth.log : when people are try to login in the system
+nginx/access.log : nginx connection logs
+
+- cat : will log the entire log file
+- tail : will output last part of the file
+- less : output one page at a time
+- head : output first of a file
+- | : read from the stdout
+-  > : write stdout to a file
+- >> : append to the stdout file
+- < : read from stdin
+
+# find and grep
+
+## find is  where
+- find /var/log -type f -name "*.log" : to find the log files in /var/log/
+- sudo !!  - to rerun the last command in the unix history as sudo
+- !! run the last command in unix history 
+- find / -type d -name log
+
+## grep is looking inside the files
+
+- ps aux | grep node : find the node process running
+
+# nginx redirection and gzip
+
+- Gzip is the compression algorithm the run on nginx.
+- you cannot gzip the pictures. they are already compressed.
+- MPEG: Motion picture expert group
+- JPEG: Joint picture expert group
+
+# Subdomains
+
+- create a virtual server in /etc/nginx/sites-enabled
+- enter the entry in nginx.conf
+- restart nginx
+
+
 slide link : `https://static.frontendmasters.com/assets/courses/2023-04-18-fullstack-v3/fullstack-v3-slides.pdf`
 
