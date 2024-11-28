@@ -60,7 +60,7 @@ User -> Shell -> Kernel (talks to the hardware) -> hardware
 
 
 ## CLI command to start a server :  
-	- `ssh -i ~/.ssh/newfsfe root@143.110.190.94` : ssh -i <path to ssh file> root@<IP address of the server>
+	- `ssh -i ~/.ssh/newfsfe root@<server ip>` : ssh -i <path to ssh file> root@<IP address of the server>
 
 
 ## Internet (Networking)
