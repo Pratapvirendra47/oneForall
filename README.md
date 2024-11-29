@@ -241,5 +241,14 @@ nginx/access.log : nginx connection logs
 
 - SQLlite : npm install sqlite3
 
+# HTTP
+
+- request <====> response
+- Proper status code for post request is 201 : i.e created successfully
+
+# HTTPS
+
+certbot : https://certbot.eff.org/instructions?ws=nginx&os=snap
+ln creates links between files
 
 slide link : `https://static.frontendmasters.com/assets/courses/2023-04-18-fullstack-v3/fullstack-v3-slides.pdf`
