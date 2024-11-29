@@ -232,6 +232,11 @@ nginx/access.log : nginx connection logs
 - enter the entry in nginx.conf
 - restart nginx
 
+# Websockets
+
+- Websockets are persistent bidirectional connection between client and server. real time communication between client and server.
+- HTTP is one way it doesn't persist
+
 
 slide link : `https://static.frontendmasters.com/assets/courses/2023-04-18-fullstack-v3/fullstack-v3-slides.pdf`
 
