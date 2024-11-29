@@ -251,4 +251,33 @@ nginx/access.log : nginx connection logs
 certbot : https://certbot.eff.org/instructions?ws=nginx&os=snap
 ln creates links between files
 
+# HTTP/1.1
+
+- For every file in http/1.1 it makes an independent connection.
+- HTTP/2 does multiplexing which means we can to multiple things in one connection. HTTP/2 is much faster than HTTP/1
+- HTTP/2 takes a lot of CPU process.
+- lines to added in nginx file
+-   listen [::]:443 http2 ssl ipv6only=on; # managed by Certbot
+    listen 443 http2 ssl; # managed by Certbot
+
+# Containers
+
+- Containers examples : Docker, Amazon ECS, Apache Mesos, CoreOS kt
+- lightweight
+- Portable
+- Docker run with its own user
+- Docker runs from the home directory
+- docker build -t node-fsfe . : to run the dockerfile. `.` suggest to run from the same directory
+- node:19-alpine.3.16 :  https://github.com/nodejs/docker-node/blob/7abbf9f3d902b901da72714bcc30b5a92831547e/19/alpine3.16/Dockerfile
+- The file in the above link is the Dockerfile for node:10-alpine.3.16 that we are using. it creates the node user
+-  sudo docker run -d -p 3000:3000 node-fsfe : to run the docker container
+
+# Orchestration
+
+- bringing servers online and turing offline
+- Kubernetes : manages your containers for you
+- Docker swarm
+- Amazon EKS
+- Apache Mesos
+
 slide link : `https://static.frontendmasters.com/assets/courses/2023-04-18-fullstack-v3/fullstack-v3-slides.pdf`
