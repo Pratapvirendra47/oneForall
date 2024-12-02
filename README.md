@@ -280,4 +280,19 @@ ln creates links between files
 - Amazon EKS
 - Apache Mesos
 
+# Load Balancer
+
+- Balancing the load on the servers
+
+## Load Balancer scheduling algorithm
+
+- Round Robin
+- IP hashing
+- Random Choice
+- Least connection
+- Least loaded
+- htop : to check what ur servers are actually doing
+
+- `nginx log` :  log_format upstreamlog '[$time_local] $remote_addr - $remote_user - $server_name $host to: $upstream_addr: $request $status upstream_response_time $upstream_response_time msec $msec request_time $request_time';
+
 slide link : `https://static.frontendmasters.com/assets/courses/2023-04-18-fullstack-v3/fullstack-v3-slides.pdf`
